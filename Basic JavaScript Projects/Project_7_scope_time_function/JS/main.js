@@ -30,6 +30,17 @@ function get_Date(){
 
 //If military time is greater than 1200, when clicking, you are greeted with, "Good afternoon."
 
+function Date_Function(){
+    Day = document.getElementById("Day") .value;
+    if (Day == 22){
+        Payment = "Truck payment is due today.";
+    }
+    else{
+        Payment = "Truck payment not due today.";
+    }
+    document.getElementById("Todays_date").innerHTML = Payment;
+}
+
 OuncesToPSI();
 OzToGramsPressure();
 FeetToInches();
