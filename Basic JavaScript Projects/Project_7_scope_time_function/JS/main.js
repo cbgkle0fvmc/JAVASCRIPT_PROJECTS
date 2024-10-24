@@ -21,6 +21,14 @@ function localVariable2(){
     document.write(Y * 3);
 }
 
+function get_Date(){
+    if (new Date().getHours() > 12) {
+        document.getElementById("wakeUp").innerHTML = "Good afternoon.";
+    }
+   
+}
+
+//If military time is greater than 1200, when clicking, you are greeted with, "Good afternoon."
 
 OuncesToPSI();
 OzToGramsPressure();
