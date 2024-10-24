@@ -20,3 +20,13 @@ function facilityAttributes(){
     " was built in " + MountMoran.Facility_YearConstructed + "and has " + MountMoran.Facility_NumberOfWells
     + " " + " and is controlled by " + MountMoran.Facility_ControllerMake;
 }
+
+function multiply_Function(){
+    document.getElementById("Nested").innerHTML = Multiply();
+    function Multiply() {
+        var Start = 10;
+        function Times_two() {Multiply *= 2;}
+        Times_two();
+        return Start;
+    }
+}
