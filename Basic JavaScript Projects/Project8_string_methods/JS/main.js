@@ -18,3 +18,8 @@ function IntToString(){
     var X = 100;
     document.getElementById("NumToString").innerHTML = X.toString();
 }
+
+function raw_Number(){
+    X = 3.1456792566285484131389466123654
+    document.getElementById("specifiedLength").innerHTML = X.toPrecision(4);
+}
