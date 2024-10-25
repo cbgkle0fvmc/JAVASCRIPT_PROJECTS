@@ -7,3 +7,14 @@ function getSentence(){
     document.getElementById("concat_method").innerHTML = concatenated_sentence;
 
 }
+
+function slice_Method(){
+    var Sentence = "From this sentence, we will select one word to read.";
+    var sliced_Word = Sentence.slice(10, 18);
+    document.getElementById("Word").innerHTML = sliced_Word;
+}
+
+function IntToString(){
+    var X = 100;
+    document.getElementById("NumToString").innerHTML = X.toString();
+}
