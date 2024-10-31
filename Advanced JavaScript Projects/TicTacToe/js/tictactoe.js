@@ -136,7 +136,7 @@ function audio(audioURL) {
     //We create a new audio object amd we pass the path as a parameter.
     let audio = new Audio(audioURL);
     //Play method plays our audio sound.
-    audio.play;
+    audio.play();
 }
 //This function utilyzes HTML canvas to draw win lines.
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
@@ -224,3 +224,4 @@ function resetGame() {
     //This resets our array so it is empty and we can start over.
     selectedSquares = [];
 }
+
