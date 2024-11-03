@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="myDog"></p>
+
+        <script>
+            /*Javascript dictionary object*/
+            var dog = {name: "Lola", breed: "blue healer", color:"Salt and Pepper"};
+            /*convert JavaScript objects to string format*/
+            var JSONstring = JSON.stringify(dog);
+            document.getElementById("myDog").innerHTML = JSONstring;
+        </script>
+    </body>
+</html>

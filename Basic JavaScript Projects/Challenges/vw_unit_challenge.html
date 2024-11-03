@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <link rel="stylesheet" type="text/css" href="CSS/syle.css">
+    <script src="javascript/main.js"></script>
+
+</head>
+
+<body>
+    <h2>Change size of font on different screen sizes.</h2>
+
+    <div class="example">Example.div</div>
+    <section>
+        <p>
+            Curabitur tristique at nec sodales congue. Facilisi vivamus facilisi turpis litora urna mauris; fringilla
+            vitae
+            vivamus. Habitant finibus gravida dignissim mus pellentesque; cursus dictumst. Condimentum nam faucibus
+            gravida
+            natoque posuere. Facilisis lacinia non, aenean dis litora tellus nec netus. Aliquet facilisis ultricies
+            dolor
+            cubilia tristique vehicula pulvinar hac. Maecenas aptent posuere nascetur mollis; tempor litora rutrum
+            ridiculus
+            eleifend. Ridiculus netus per; malesuada vehicula phasellus et parturient. Mattis dictumst rutrum posuere
+            ornare
+            himenaeos.
+            <br>
+            <br>
+            Curabitur tristique at nec sodales congue. Facilisi vivamus facilisi turpis litora urna mauris; fringilla
+            vitae
+            vivamus. Habitant finibus gravida dignissim mus pellentesque; cursus dictumst. Condimentum nam faucibus
+            gravida
+            natoque posuere. Facilisis lacinia non, aenean dis litora tellus nec netus. Aliquet facilisis ultricies
+            dolor
+            cubilia tristique vehicula pulvinar hac. Maecenas aptent posuere nascetur mollis; tempor litora rutrum
+            ridiculus
+            eleifend. Ridiculus netus per; malesuada vehicula phasellus et parturient. Mattis dictumst rutrum posuere
+            ornare
+            himenaeos.
+        </p>
+    </section>
+    <section> <!--REGULAR CONTACT FORM-->
+        <form name="myForm1" onsubmit="return validateForm()" method="post">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+
+    <!--POP UP FORM-->
+    <section>
+        <!--Button to open pop up form-->
+        <button class="open-button" onclick="openForm()">Open Form</button>
+
+        <!--The form-->
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.html" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password:" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
